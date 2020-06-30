@@ -1,0 +1,76 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  max-width: 1600px;
+}
+
+aside {
+  height: 90vh;
+  width: 10%;
+  background-color: black;
+  float: left;
+}
+
+aside .menu {
+  text-align: center;
+  padding: 10px;
+}
+
+.menu .menu-top {
+  width: 100%;
+  margin-bottom: 750px;
+}
+
+.menu-bot i , .menu-top i {
+  color: white;
+  display: block;
+  padding: 4px 0 ;
+}
+
+
+header {
+  width: 90%;
+  height: 70px;
+  background-color: black;
+  float: left;
+  margin-right: 0;
+}
+
+header .rt {
+  float: right;
+  line-height: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.rt button {
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+
+main {
+  height: 800px;
+  width: 90%;
+  background-color: grey;
+  float: left;
+}
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: lightgrey;
+}
