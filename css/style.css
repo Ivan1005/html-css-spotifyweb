@@ -213,9 +213,6 @@ footer .footer-center {
 .footer-center-top .fl-ct{
   text-align: center;
   border: 2px solid white;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
 }
 
 .footer-center-top .fl-rt {
@@ -228,9 +225,8 @@ footer .footer-center {
 }
 
 .fl-ct i {
-  height: 14px;
-  width: 14px;
-  padding-left: 2px;
+  height: 13px;
+  width: 13px;
 }
 
 .footer-center .footer-center-bot {
