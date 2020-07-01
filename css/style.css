@@ -116,6 +116,12 @@ main .main-bot {
 
 .main-bot h3 {
   margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.main-bot #par {
+  padding-left: 10px;
+  color: #a79e9e;
 }
 
 /* INIZIO BLOCCO CANZONI */
@@ -319,8 +325,16 @@ footer .footer-right {
     display: inline;
   }
 
+  .menu-top .playlist h4 {
+    padding-top: 10px;
+  }
+
   .menu-top .playlist , .menu-top .playlist i{
     color:#a79e9e;
+  }
+
+  .menu-bot .fa-user-circle {
+    border-top: 1px solid #a79e9e;
   }
 
   header {
@@ -330,4 +344,55 @@ footer .footer-right {
   main {
     width: 70%;
   }
+
+  .categorie div {
+    font-size: 14px;
+  }
+
+  .main-bot h3  {
+    margin-top: 15px;
+  }
+
+  .songs .song {
+    width: 25%;
+  }
+
+  .titolo p  {
+    display: inline;
+  }
+
+  .footer-left .rt {
+    display: flex;
+    font-size: 16px;
+  }
+
+  .icona i {
+    padding: 5px;
+  }
+
+  .footer-center .footer-center-top {
+    padding-top: 12px;
+  }
+
+  .footer-center .footer-center-top  i{
+    font-size: 20px;
+  }
+
+  .footer-center-top .fl {
+    text-align: right;
+  }
+
+  .footer-center-top .fl-rt {
+    text-align: left;
+  }
+
+  .footer-center-top .fl-ct {
+    text-align: center;
+  }
+
+  .icon-left i {
+    padding: 5px;
+    font-size: 13px;
+}
+
 }
