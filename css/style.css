@@ -13,6 +13,7 @@
 body {
   max-width: 2000px;
   margin: 0 auto;
+  font-family: 'Nunito', sans-serif;
 }
 
 aside {
@@ -25,7 +26,7 @@ aside {
 aside .menu {
   height: 90vh;
   text-align: center;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,7 +34,11 @@ aside .menu {
 
 .menu .menu-top {
   width: 100%;
-  /* margin-bottom: 750px; */
+}
+
+.menu-top .fa-spotify {
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
 .menu-bot i , .menu-top i {
@@ -70,9 +75,10 @@ header .rt {
 main {
   height: calc( 90vh - 70px);
   width: 90%;
-  background-color: grey;
+  background-color: #37373c;
   float: left;
   overflow-y: scroll;
+  color: white;
 }
 
 main .main-top {
@@ -91,8 +97,12 @@ main .main-top {
   width: 33.333%;
   float: left;
   font-size: 11px;
-  color: black;
   padding: 10px 5px;
+}
+
+.categorie div a {
+  color: #a79e9e;
+  text-decoration: none;
 }
 
 /* PARTE BOT DEL MAIN */
@@ -100,11 +110,15 @@ main .main-bot {
   padding: 0 10px ;
 }
 
+.main-bot h3 {
+  margin-bottom: 15px;
+}
+
 /* INIZIO BLOCCO CANZONI */
 .songs .song {
   width:50%;
   height: auto;
-  padding: 0 10px;
+  padding: 10px;
   float: left;
 }
 
@@ -123,12 +137,17 @@ main .main-bot {
   text-align: center;
 }
 
+.song-bot p {
+  color: #a79e9e;
+  font-size: 12px;
+}
+
 /* INIZIO FOOTER */
 
 footer {
   width: 100%;
   height: 10vh;
-  background-color: lightgrey;
+  background-color: #4a4a4a;
   padding: 10px;
 }
 
@@ -158,12 +177,22 @@ footer .footer-left , footer .footer-right {
 .footer-left .titolo {
   width: 40%;
   height: auto;
+  padding-left: 5px;
+}
+
+.titolo h6 {
+  color: white;
+}
+
+.titolo p {
+  color: #a79e9e;
   font-size: 10px;
 }
 
 .footer-left .rt {
   width: 30%;
   font-size: 12px;
+  color: #a79e9e;
 }
 
 /* PARTE CENTRALE DEL FOOTER */
@@ -173,51 +202,83 @@ footer .footer-center {
   height: 100%;
 }
 
- .footer-center-top .fl {
+.footer-center .footer-center-top {
+  height: 50%;
+}
+
+.footer-center-top .fl {
   width: 20%;
 }
 
 .footer-center-top .fl-ct{
   text-align: center;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
 }
 
 .footer-center-top .fl-rt {
   text-align: right;
 }
 
+.footer-center-top .fl i {
+  color: white;
+  font-size: 13px;
+}
+
+.fl-ct i {
+  height: 14px;
+  width: 14px;
+  padding-left: 2px;
+}
+
 .footer-center .footer-center-bot {
+  height: 50%;
   display: flex;
   align-items: center;
+  padding-top: 5px;
 }
 
 .footer-center-bot .footer-bot-left , .footer-center-bot .footer-bot-right {
   width: 20%;
+  font-size: 10px;
+  color: white;
 }
 
 .footer-center-bot .footer-bot-center {
   width: 60%;
+  padding: 3px;
 }
 
-.footer-bot-center hr {
-  height: 2px ;
-  background-color: black;
-  color: black;
+.footer-center-bot .footer-bot-right {
+  text-align: right;
+}
+
+ hr {
+  height: 3px ;
+  background-color: white;
+  color: white;
+  border:none;
 }
 
 /* PARTE DESTRA DEL FOOTER */
 
+footer .footer-right {
+  padding-left: 10px;
+}
+
 .footer-right .icon-left {
   width: 40%;
   font-size: 8px;
-  padding: 3px;
+  color: white;
+}
+
+.icon-left i {
+  padding: 1px;
 }
 
 .footer-right .hr-right {
   width: 60%;
   padding: 2px;
-}
-
-.hr-right hr {
-  height: 2px;
-  background-color: black;
 }
