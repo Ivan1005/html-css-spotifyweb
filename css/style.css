@@ -16,6 +16,10 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+.xs {
+  display: none;
+}
+
 aside {
   height: 90vh;
   width: 10%;
@@ -264,16 +268,60 @@ footer .footer-right {
 }
 
 .footer-right .icon-left {
-  width: 40%;
+  width: 45%;
   font-size: 8px;
   color: white;
 }
 
 .icon-left i {
-  padding: 1px;
+  padding: 2px;
 }
 
 .footer-right .hr-right {
-  width: 60%;
-  padding: 2px;
+  width: 55%;
+  padding: 1px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .xs {
+    display:contents;
+  }
+
+  aside {
+    width: 30%;
+  }
+
+  aside .menu {
+    text-align: left;
+  }
+
+  .menu-top .fa-spotify {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  .menu-bot i , .menu-top i {
+    font-size: 25px;
+    padding: 10px 0 ;
+  }
+
+  .menu-bot i span, .menu-top i span {
+    color: #a79e9e;
+    font-size: 20px;
+  }
+
+  .menu-top i  .spot {
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline;
+  }
+
+  header {
+    width: 70%;
+  }
+
+  main {
+    width: 70%;
+  }
 }
