@@ -308,13 +308,19 @@ footer .footer-right {
 
   .menu-bot i span, .menu-top i span {
     color: #a79e9e;
-    font-size: 20px;
+    font-size: 16px;
+    display: inline;
+    vertical-align: middle;
   }
 
   .menu-top i  .spot {
     font-size: 30px;
     vertical-align: middle;
     display: inline;
+  }
+
+  .menu-top .playlist , .menu-top .playlist i{
+    color:#a79e9e;
   }
 
   header {
