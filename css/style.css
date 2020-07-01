@@ -72,10 +72,131 @@ main {
   width: 90%;
   background-color: grey;
   float: left;
+  overflow-y: scroll;
+}
+
+main .main-top {
+  padding: 10px 10px 0 10px;
+  width: 100%;
+}
+
+.main-top .categorie {
+  width: 100%;
+  padding: 0 12px;
+  margin: 4px auto;
+  text-align: center;
+}
+
+.categorie div {
+  width: 33.333%;
+  float: left;
+  font-size: 11px;
+  color: black;
+  padding: 10px 5px;
+}
+
+main .main-bot {
+  padding: 0 10px ;
+}
+
+
+.songs .song {
+  width:50%;
+  height: auto;
+  padding: 0 10px;
+  float: left;
+}
+
+.song .song-top {
+  width: 100%;
+}
+
+.song-top img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.song .song-bot {
+  text-align: center;
 }
 
 footer {
   width: 100%;
   height: 10vh;
   background-color: lightgrey;
+  padding: 10px;
+}
+
+footer .fl {
+  float: left;
+}
+
+footer .footer-left , footer .footer-right {
+  width: 30%;
+  height: 100%;
+  background-color: tomato;
+  display: flex;
+  align-items: center;
+}
+
+.footer-left .img {
+  width: 30%;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.footer-left .titolo {
+  width: 40%;
+  height: auto;
+  font-size: 10px;
+}
+
+.footer-left .rt {
+  width: 30%;
+  font-size: 12px;
+}
+
+footer .footer-center {
+  width: 40%;
+  height: 100%;
+  background-color: azure;
+}
+
+ .footer-center-top .fl {
+  width: 20%;
+}
+
+.footer-center-top .fl-ct{
+  text-align: center;
+}
+
+.footer-center-top .fl-rt {
+  text-align: right;
+}
+
+.footer-center .footer-center-bot {
+  display: flex;
+  align-items: center;
+}
+
+.footer-center-bot .footer-bot-left , .footer-center-bot .footer-bot-right {
+  width: 20%;
+}
+
+.footer-center-bot .footer-bot-center {
+  width: 60%;
+}
+
+.footer-bot-center hr {
+  height: 2px ;
+  background-color: black;
+  color: black;
 }
