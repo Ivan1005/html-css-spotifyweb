@@ -41,7 +41,7 @@ aside .menu {
   display: block;
   padding: 4px 0 ;
 }
-
+/* INIZIO HEADER */
 
 header {
   width: 90%;
@@ -65,7 +65,7 @@ header .rt {
   border: 1px solid white;
   border-radius: 20px;
 }
-
+/* INIZIO MAIN */
 
 main {
   height: calc( 90vh - 70px);
@@ -95,11 +95,12 @@ main .main-top {
   padding: 10px 5px;
 }
 
+/* PARTE BOT DEL MAIN */
 main .main-bot {
   padding: 0 10px ;
 }
 
-
+/* INIZIO BLOCCO CANZONI */
 .songs .song {
   width:50%;
   height: auto;
@@ -121,6 +122,8 @@ main .main-bot {
 .song .song-bot {
   text-align: center;
 }
+
+/* INIZIO FOOTER */
 
 footer {
   width: 100%;
@@ -163,6 +166,8 @@ footer .footer-left , footer .footer-right {
   font-size: 12px;
 }
 
+/* PARTE CENTRALE DEL FOOTER */
+
 footer .footer-center {
   width: 40%;
   height: 100%;
@@ -198,6 +203,8 @@ footer .footer-center {
   background-color: black;
   color: black;
 }
+
+/* PARTE DESTRA DEL FOOTER */
 
 .footer-right .icon-left {
   width: 40%;
