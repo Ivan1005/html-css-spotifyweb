@@ -44,6 +44,10 @@ aside .menu {
   color:white;
 }
 
+.menu-top .fa-spotify:hover {
+ color: #1db954;
+}
+
 .menu-top .fa-spotify {
   font-size: 20px;
   padding-bottom: 10px;
@@ -125,7 +129,7 @@ main .main-top {
   padding: 5px 5px;
 }
 
-.categorie  #green {
+.categorie  .green:hover{
   border-bottom: 2px solid #1db954;
 }
 
