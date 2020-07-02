@@ -542,12 +542,16 @@ footer .footer-right {
     min-height: 90px;
   }
 
-  footer .footer-left, footer .footer-right {
-    width: 20%;
+  footer .footer-left {
+    width: 15%;
+  }
+
+  footer .footer-right {
+    width: 15%;
   }
 
   footer .footer-center {
-    width: 60%;
+    width: 70%;
   }
 
   .footer-center .footer-center-top , .footer-center .footer-center-bot {
@@ -564,8 +568,8 @@ footer .footer-right {
   }
 
   .icon-left i {
-    padding: 10px;
-    font-size: 15px;
+    padding: 8px;
+    font-size: 13px;
  }
 
 }
