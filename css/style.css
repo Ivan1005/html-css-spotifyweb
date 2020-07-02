@@ -40,6 +40,10 @@ aside .menu {
   width: 100%;
 }
 
+.menu-top span:hover , .menu-top p:hover {
+  color:white;
+}
+
 .menu-top .fa-spotify {
   font-size: 20px;
   padding-bottom: 10px;
@@ -49,7 +53,17 @@ aside .menu {
   color: white;
   display: block;
   padding: 4px 0 ;
+  cursor: pointer;
 }
+
+ .menu-top .playlist i:hover  {
+  color: white;
+}
+
+.menu-bot span:hover {
+  color: white;
+}
+
 /* INIZIO HEADER */
 
 header {
@@ -73,7 +87,13 @@ header .rt {
   color: white;
   border: 1px solid white;
   border-radius: 20px;
+  cursor: pointer;
 }
+
+.rt button:hover {
+  transform: scale(1.1);
+}
+
 /* INIZIO MAIN */
 
 main {
@@ -101,12 +121,17 @@ main .main-top {
   width: 33.333%;
   float: left;
   font-size: 11px;
-  padding: 10px 5px;
+  padding: 5px 5px;
 }
 
 .categorie div a {
   color: #a79e9e;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.categorie div a:hover {
+  color: white;
 }
 
 /* PARTE BOT DEL MAIN */
@@ -134,13 +159,37 @@ main .main-bot {
 
 .song .song-top {
   width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.overlay {
+  max-height: 97%;
+  position: absolute;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right:0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay i {
+  font-size: 60px;
+}
+
+.overlay:hover {
+  opacity: 1;
 }
 
 .song-top img {
   width: 100%;
   height: auto;
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position:center ;
 }
 
 .song .song-bot {
@@ -157,8 +206,11 @@ main .main-bot {
 footer {
   width: 100%;
   height: 10vh;
+  min-height: 57px;
   background-color: #4a4a4a;
   padding: 10px;
+  position: fixed;
+  bottom : 0;
 }
 
 footer .fl {
@@ -182,6 +234,7 @@ footer .footer-left , footer .footer-right {
   max-height: 30px;
   object-fit: contain;
   object-position: center;
+  cursor: pointer;
 }
 
 .footer-left .titolo {
@@ -197,12 +250,22 @@ footer .footer-left , footer .footer-right {
 .titolo p {
   color: #a79e9e;
   font-size: 10px;
+  cursor: pointer;
+}
+
+.titolo p:hover {
+  color: white;
 }
 
 .footer-left .rt {
   width: 30%;
   font-size: 12px;
   color: #a79e9e;
+}
+
+.footer-left .rt i:hover {
+  color: white;
+  cursor: pointer;
 }
 
 /* PARTE CENTRALE DEL FOOTER */
@@ -213,7 +276,7 @@ footer .footer-center {
 }
 
 .footer-center .footer-center-top {
-  height: 50%;
+  height: 35%;
 }
 
 .footer-center-top .fl {
@@ -231,18 +294,22 @@ footer .footer-center {
 .footer-center-top .fl i {
   color: white;
   font-size: 13px;
+  cursor: pointer;
 }
 
-.fl-ct i {
-  height: 13px;
-  width: 13px;
+.footer-center-top  .fl-ct.fl i {
+  font-size: 23px;
+}
+
+.footer-center-top  .fl-ct.fl i:hover {
+  transform: scale(1.2);
 }
 
 .footer-center .footer-center-bot {
-  height: 50%;
+  height: 60%;
+  width: 100%;
   display: flex;
   align-items: center;
-  padding-top: 5px;
 }
 
 .footer-center-bot .footer-bot-left , .footer-center-bot .footer-bot-right {
@@ -281,6 +348,7 @@ footer .footer-right {
 
 .icon-left i {
   padding: 2px;
+  cursor: pointer;
 }
 
 .footer-right .hr-right {
@@ -300,6 +368,10 @@ footer .footer-right {
 
   aside .menu {
     text-align: left;
+  }
+
+  .playlist p {
+    padding-top: 10px;
   }
 
   .menu-top .fa-spotify {
@@ -349,6 +421,10 @@ footer .footer-right {
     font-size: 14px;
   }
 
+  .overlay {
+    max-height: 95%;
+ }
+
   .main-bot h3  {
     margin-top: 15px;
   }
@@ -360,6 +436,10 @@ footer .footer-right {
   .titolo p  {
     display: inline;
   }
+
+ footer {
+  min-height: 100px;
+ }
 
   .footer-left .rt {
     display: flex;
@@ -375,7 +455,12 @@ footer .footer-right {
   }
 
   .footer-center .footer-center-top  i{
-    font-size: 20px;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+
+  .footer-center-top  .fl-ct.fl {
+    height:26px;
   }
 
   .footer-center-top .fl {
@@ -403,10 +488,6 @@ footer .footer-right {
     width: 20%;
   }
 
-  .playlist p {
-    padding-top: 10px;
-  }
-
   header {
     width: 80%;
   }
@@ -428,6 +509,14 @@ footer .footer-right {
     width: 16%;
 }
 
+.overlay {
+  max-height: 96%;
+}
+
+  footer {
+    min-height: 90px;
+  }
+
   footer .footer-left, footer .footer-right {
     width: 20%;
   }
@@ -439,6 +528,14 @@ footer .footer-right {
   .footer-center .footer-center-top , .footer-center .footer-center-bot {
     width: 60%;
     margin: 0 auto;
+  }
+
+  .footer-center-top  .fl-ct.fl {
+    height:30px;
+  }
+
+  .footer-center-top  .fl-ct.fl i {
+    font-size: 29px;
   }
 
   .icon-left i {
