@@ -320,11 +320,15 @@ footer .footer-center {
 
 .footer-center-bot .footer-bot-center {
   width: 60%;
-  padding: 3px;
+  padding: 8px;
+}
+
+.footer-center-bot .footer-bot-left {
+  text-align: right;
 }
 
 .footer-center-bot .footer-bot-right {
-  text-align: right;
+  text-align: left;
 }
 
  hr {
