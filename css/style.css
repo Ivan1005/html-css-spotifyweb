@@ -52,8 +52,9 @@ aside .menu {
 .menu-bot i , .menu-top i {
   color: white;
   display: block;
-  padding: 4px 0 ;
+  padding: 7px 0 ;
   cursor: pointer;
+  font-size: 20px;
 }
 
  .menu-top .playlist i:hover  {
