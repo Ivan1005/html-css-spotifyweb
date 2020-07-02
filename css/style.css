@@ -125,6 +125,10 @@ main .main-top {
   padding: 5px 5px;
 }
 
+.categorie  #green {
+  border-bottom: 2px solid #1db954;
+}
+
 .categorie div a {
   color: #a79e9e;
   text-decoration: none;
