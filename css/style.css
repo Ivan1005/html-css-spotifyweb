@@ -384,6 +384,10 @@ footer .footer-right {
     padding: 10px 0 ;
   }
 
+   .playlist .fa-plus-square{
+    font-size: 40px;
+  }
+
   .menu-bot i span, .menu-top i span {
     color: #a79e9e;
     font-size: 16px;
