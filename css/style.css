@@ -281,14 +281,27 @@ footer .footer-center {
 
 .footer-center-top .fl {
   width: 20%;
+  padding: 5px;
 }
 
 .footer-center-top .fl-ct{
   text-align: center;
 }
 
-.footer-center-top .fl-rt {
+.footer-center-top .fl.fl-30 {
   text-align: right;
+}
+
+.footer-center-top .fl-rt.fl-30 , .footer-center-top  .fl.fl-10{
+  text-align: left;
+}
+
+.footer-center-top .fl-10  {
+  width: 10%;
+}
+
+.footer-center-top .fl-30 {
+  width: 30%;
 }
 
 .footer-center-top .fl i {
@@ -475,7 +488,11 @@ footer .footer-right {
     text-align: right;
   }
 
-  .footer-center-top .fl-rt {
+  .footer-center-top  .fl.fl-10{
+    text-align: right;
+  }
+
+  .footer-center-top .fl-rt ,   .footer-center-top .fl-rt.fl-10 {
     text-align: left;
   }
 
