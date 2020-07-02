@@ -99,7 +99,7 @@ header .rt {
 main {
   height: calc( 90vh - 70px);
   width: 90%;
-  background-color: #37373c;
+  background-color: #272727;
   float: left;
   overflow-y: scroll;
   color: white;
